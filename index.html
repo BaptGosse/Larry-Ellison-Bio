@@ -6,59 +6,81 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
         <link rel="icon" type="image/png" href="assets/images/icon.webp">
+        <script src="js/slider.js" defer></script>
+        <script src="js/easteregg.js" defer></script>
     </head>
-<body>
-<header>
-    <figure>
-        <img src="assets/images/icon.webp">
-        <h1>Larry Ellison</h1>
-    </figure>
-    <nav>
-        <ul>
-            <li>
-                <a href="#whois"><i class="bi bi-person-fill"></i> Qui est-ce ?</a>
-            </li>
-            <li>
-                <a href="#enterprise"><i class="bi bi-building-fill"></i> Son entreprise</a>
-            </li>
-            <li>
-                <a href="#java"><i class="bi bi-braces-asterisk"></i></i> Son language</a>
-            </li>
-            <li>
-                <a href="#cloud"><i class="bi bi-cloud-fill"></i> Son cloud</a>
-            </li>
-            <li>
-                <a href="#comment"><i class="bi bi-chat-left-dots-fill"></i> Notre avis</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section id="whois">
-
-        
-    </section>
-    <section id="enterprise">
-
-
-    </section>
-    <section id="java">
-
-
-    </section>
-    <section id="cloud">
-
-
-    </section>
-    <section id="comment">
-
-
-    </section>
-</main>
-<footer>
-
-
-</footer>
-
-</body>
+    <body>
+        <header>
+            <figure>
+                <img src="assets/images/icon.webp" alt="Larry Ellison Icon">
+                <h1>Larry Ellison</h1>
+            </figure>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#whois"><i class="bi bi-person-fill"></i> Qui est-ce ?</a>
+                    </li>
+                    <li>
+                        <a href="#enterprise"><i class="bi bi-building-fill"></i> Son entreprise</a>
+                    </li>
+                    <li>
+                        <a href="#java"><i class="bi bi-braces-asterisk"></i></i> Son language</a>
+                    </li>
+                    <li>
+                        <a href="#cloud"><i class="bi bi-cloud-fill"></i> Son cloud</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="whois">
+                <h1>Biographie de Larry Ellison</h1>
+                <article>
+                    <aside class="left" onclick="leftButton()"><</aside>
+                    <div>
+                        <p>Larry Ellison, né Lawrence Joseph Ellison le 17 août 1944 à New York (États-Unis), est un homme d'affaires et milliardaire américain. Il est le cofondateur de la firme Oracle Corporation connue pour offrir des logiciels liés aux systèmes de gestion de base de données et au célèbre langage de programmation Java. Sa fortune est estimée en avril 2023 par Forbes à 118,8 milliards de dollars, ce qui en fait le 4e individu le plus riche du monde. </p>
+                        <p>C'est à partir de l'âge de 22 ans qu'il commence à s'intéresser à l'informatique. Le 19 septembre 2014, il quitte son poste de PDG d’Oracle, mais demeurant directeur de la technologie chez Oracle, par ailleurs, il devient aussi président du conseil d’administration du groupe. Le 27 décembre 2018, Larry Ellison entre au conseil d'administration du constructeur automobile Tesla. </p>
+                        <p>En tant que dirigeant d'Oracle, Larry Ellison a eu une rémunération de 41,5 millions de dollars en 2016. Il a perçu en 2022 1,7 milliard de dollars en dividendes. Il est le propriétaire du défi américain BMW Oracle Racing qui a participé à la Coupe de l'America 2003, échouant en finale de la Coupe Louis-Vuitton face au bateau suisse Alinghi. </p>
+                    </div>
+                    <aside class="right" onclick="rightButton()">></aside>
+                </article>
+            </section>
+            <section id="enterprise">
+                <figure>
+                    <img src="assets/images/oracle-icon.png">
+                </figure>
+                <article>
+                    <h1>Oracle, son entreprise internationale</h1>
+                    <p>Oracle Corporation est une entreprise américaine spécialisée dans le développement et la commercialisation de logiciels et de systèmes informatiques pour les entreprises. Fondée en 1977, Oracle est aujourd'hui l'un des plus grands fournisseurs de solutions informatiques du monde, avec des produits allant des bases de données et des applications métiers aux services cloud et à la gestion de la chaîne d'approvisionnement. Avec plus de 140 000 employés dans le monde entier et un chiffre d'affaires annuel de plusieurs milliards de dollars, Oracle est un acteur majeur du secteur technologique et continue d'innover pour aider les entreprises à améliorer leur efficacité opérationnelle et leur compétitivité.</p>
+                </article>
+            </section>
+            <section id="java">
+                <article>
+                    <h1>Java, son langage de programmation</h1>
+                    <p>Java est un langage de programmation informatique populaire créé par Sun Microsystems en 1995 et maintenant détenu et développé par Oracle Corporation. C'est un langage orienté objet qui est utilisé pour développer des applications pour une variété de plates-formes, telles que les ordinateurs de bureau, les appareils mobiles et les serveurs. Java est également utilisé pour le développement de jeux vidéo, de logiciels d'entreprise et de nombreux autres types d'applications. En raison de sa portabilité, de sa sécurité et de sa facilité d'utilisation, Java est devenu un choix populaire pour les programmeurs du monde entier et continue d'être largement utilisé aujourd'hui.</p>
+                </article>
+                <figure>
+                    <img src="assets/images/java-icon.png">
+                </figure>
+            </section>
+            <section id="cloud">
+                <figure>
+                    <img src="assets/images/oracle-cloud-icon.png">
+                </figure>
+                <article>
+                    <h1>Oracle Cloud Platform</h1>
+                    <p>La plateforme cloud d'Oracle est une offre complète de services cloud pour améliorer l'efficacité opérationnelle des entreprises, notamment dans les domaines des bases de données, de l'intégration, de l'analyse et de la sécurité. Oracle Cloud Platform propose des services tels que Oracle Database Cloud Service, Oracle Integration Cloud Service, Oracle Analytics Cloud, Oracle Security Cloud, et bien d'autres encore. En outre, Oracle Cloud Platform offre une offre gratuite, appelée <a href="#cloud" onclick="easteregg()">Oracle Cloud Free Tier</a> (cliquez pour en savoir plus), qui permet aux développeurs, start-ups et petites entreprises de tester les services cloud d'Oracle tels que les bases de données autonomes et l'analyse de données. Cette offre leur permet de découvrir les avantages de la plateforme cloud d'Oracle et de prendre des décisions plus éclairées sur leur utilisation.</p>
+                    <aside>
+                        <div>
+                            <span onclick="closegg()">&times;</span>
+                            <video src="assets/videos/easteregg/easteregg.mp4" type="video/mp4" autoplay></video>
+                        </div>
+                    </aside>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Projet à usage scolaire © Tous droits réservés à <a href="https://www.baptiste-gosselin.fr/">Baptiste Gosselin</a> - 2023</p>
+        </footer>
+    </body>
 </html>

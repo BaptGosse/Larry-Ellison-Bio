@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Semilight;
+    src: url("../assets/fonts/segoeuisl.ttf");
+}
+@font-face {
+    font-family: Semibold;
+    src: url("../assets/fonts/seguisb.ttf");
+}
+@font-face {
+    font-family: Light;
+    src: url("../assets/fonts/segoeuil.ttf");
+}
 html, body{
     margin: 0;
     padding: 0;
@@ -21,7 +33,7 @@ header figure h1{
     margin-left: 10px;
     margin-bottom: 0;
     position: absolute;
-    font-family: "Segoe UI Semibold";
+    font-family: Semibold, sans-serif;
 }
 header nav{
     margin-top: 37px;
@@ -44,7 +56,7 @@ header nav ul li{
 header nav ul li a{
     color: black;
     text-decoration: none;
-    font-family: "Segoe UI Semilight";
+    font-family: Semilight, sans-serif;
     font-size: 1.1em;
     background-color: white;
     padding: 5px;
@@ -54,4 +66,126 @@ header nav ul li a{
 header nav ul li a:hover{
     background-color: darkgray;
     color: white;
+}
+main section#whois{
+    margin-top: 60px;
+    text-align: center;
+}
+main section#whois h1, main section#enterprise h1, main section#java h1, main section#cloud h1{
+    font-family: Semibold, sans-serif;
+    font-size: 2rem;
+}
+main section#whois > article{
+    display: flex;
+    align-items: center;
+}
+main section#whois article div{
+    width: 60%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+    white-space: nowrap;
+    font-size: 0;
+}
+.left{
+    float: left;
+    margin-left: 25px;
+}
+.right{
+    float: right;
+    margin-right: 25px;
+}
+main section#whois article div p{
+    width: 100%;
+    display: inline-block;
+    white-space: normal;
+    font-size: 1.2rem;
+    font-family: Light, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.5s;
+    text-align: justify;
+}
+main section#whois article aside{
+    font-family: Semilight, sans-serif;
+    font-size: 2.5rem;
+}
+main section#whois article aside:hover{
+    cursor: pointer;
+}
+main section#enterprise, main section#java, main section#cloud{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+}
+main section#enterprise figure, main section#java figure, main section#cloud figure{
+    margin: 0;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+main section#java figure{
+    float: right;
+}
+main section#enterprise figure img, main section#java figure img, main section#cloud figure img{
+    width: 70%;
+    display: inline-block;
+}
+main section#enterprise article, main section#java article, main section#cloud article{
+    display: inline-block;
+    width: 50%;
+}
+main section#enterprise article, main section#cloud article{
+    float: right;
+}
+main section#enterprise article h1, main section#java article h1, main section#cloud article h1{
+    margin: 0;
+}
+main section#enterprise article p, main section#java article p, main section#cloud article p{
+    text-align: justify;
+    font-family: Light, sans-serif;
+    font-size: 1.1rem;
+}
+main section#enterprise article p, main section#cloud article p{
+    margin: 10px 30px 0 2px;
+}
+main section#java article p, main section#java article h1{
+    margin: 10px 2px 0 30px;
+}
+main section#cloud article aside{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+main section#cloud article aside div{
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+}
+main section#cloud article aside span{
+    float: right;
+    font-size: 1.5rem;
+    font-family: Semibold, sans-serif;
+}
+main section#cloud article aside video{
+    width: 95%;
+}
+main section#cloud article aside span:hover{
+    cursor: pointer;
+}
+footer{
+    margin-top: 60px;
+    text-align: center;
+}
+footer p{
+    font-size: 1.1rem;
+    font-family: Semilight, sans-serif;
 }
